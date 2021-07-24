@@ -1,0 +1,29 @@
+{
+    // "include":[
+    //     "./src/**/*"
+    // ],
+    // "exclude": [
+    //     "./test.js"
+    // ],
+    // 编译器选项
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "ES6",
+        "strict": true,
+        // // "lib": []
+        // "outDir":"./dist",
+        // // "outFile": "index.js",
+        // "allowJs": true,
+        // "checkJs": true,
+        // // 移除注释
+        // "removeComments": true,
+        // // "noEmit": true,
+        // // 有错误不生成编译文件 即不编译
+        // "noEmitOnError": true,
+        // "alwaysStrict": true,
+        // "noImplicitAny": true,
+        // "noImplicitThis": true,
+        // "strictNullChecks": true
+    },
+    
+}
