@@ -19,7 +19,7 @@
         // "removeComments": true,
         // // "noEmit": true,
         // // 有错误不生成编译文件 即不编译
-        // "noEmitOnError": true,
+        "noEmitOnError": true,
         // "alwaysStrict": true,
         // "noImplicitAny": true,
         // "noImplicitThis": true,

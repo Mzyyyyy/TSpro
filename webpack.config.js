@@ -8,7 +8,8 @@ module.exports = {
         path:path.resolve(__dirname,'dist'),
         filename:'bundle.js',
         environment:{
-            arrowFunction:false
+            arrowFunction:false,
+            // const:false
         }
     },
     module:{
@@ -37,6 +38,29 @@ module.exports = {
                     'ts-loader'
                 ],
                 exclude: /node_moduls/
+            },
+            {
+                test:/\.less$/,
+                use:[
+                    "style-loader",
+                    "css-loader",
+                    {
+                        loader:"postcss-loader",
+                        options:{
+                            postcssOptions:{
+                                plugins:[
+                                    [
+                                        "postcss-preset-env",
+                                        {
+                                            browsers:'last 2 versions'
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    },
+                    "less-loader"
+                ]
             }
         ]
     },
